@@ -1,0 +1,27 @@
+{
+	"title": "Saurez-vous reconnaître les enfants maudits de la rédaction?",
+	"titlesocial": "Saurez-vous reconnaître les enfants maudits de la rédaction?",
+	"description": "Dans ce quiz, chaque question est un pas vers l'aventure et chaque réponse la promesse d'une rencontre fascinante.",
+	"authors": {
+		"photos": "Midjourney",
+		"videos": null,
+		"writer": {
+			"fname": "Scientifique",
+			"lname": "Fou",
+			"title": "Journaliste Blick",
+			"filetype": "png",
+			"url": null
+		},
+		"dev": "César Greppin"
+	},
+	"imgSocial": "social.jpg",
+	"headertheme": "trans", 
+	"blickWhite": false,
+	"blickBlack": true,
+	"headerBoxed": false,
+	"pubDate": "2020-07-23T11:00:00+00:00",
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "https://www.blick.ch/"
+	}
+}

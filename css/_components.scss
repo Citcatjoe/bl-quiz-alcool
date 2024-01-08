@@ -1,0 +1,158 @@
+////////////////////////////////////////////////////////////////
+//     STATEMENTS
+////////////////////////////////////////////////////////////////
+.correct { background: #BEEDB0 !important; }
+.correct-txt { color: #3DBC1B !important; }
+.error { background: #EDB0B0 !important; }
+.error-txt { color: #BE5E5E !important; }
+
+////////////////////////////////////////////////////////////////
+//     GENERAL STORYTELLING COMPONENTS
+////////////////////////////////////////////////////////////////
+
+.hero 
+{ 
+    height: auto;
+
+    @include breakpoint(min, medium) {
+        height: auto;
+        //height: 70vh;
+    };
+}
+
+.frame 
+{ 
+    background: $colorFrame; 
+}
+
+.color 
+{
+    background: $colorLight2;
+    //overflow: hidden; 
+}
+
+.gradient
+{
+    background: radial-gradient(ellipse at center, transparent 0%, black 100%);
+    opacity: .5;
+}
+
+.color-gradient
+{
+    background: linear-gradient(60deg, $colorGradient1 0%, $colorGradient2 100%);
+}
+
+button
+{
+    
+}
+
+iframe
+{
+    
+}
+
+footer
+{
+    height: 100vh;
+    background:#202124;
+}
+
+////////////////////////////////////////////////////////////////
+//     THIS STORYTELLING COMPONENTS
+////////////////////////////////////////////////////////////////
+
+.gauge
+{
+    position: relative;
+
+    .gauge-bg
+    {
+        
+    }
+
+    .gauge-cursor
+    {
+        position: absolute;
+        transform: translateX(-50%);
+        z-index: 1;
+        left: 5%;
+
+        // transform: scale(50%) !important;
+
+        // @include breakpoint(min, medium) {
+        //     transform: scale(100%) !important;
+        //     transform-origin: center center !important;
+        // };
+    }
+}
+
+#title1 
+{
+    
+    .img-container
+    {
+        width: calc(356px / 2.4);
+        height: calc(526px / 2.4);
+
+        @include breakpoint(min, medium) {
+            width: 356px;
+            height: 526px;
+        };
+    }
+}
+
+#title2
+{
+    
+    .img-container
+    {
+        width: calc(367px / 3);
+        height: auto;
+
+        @include breakpoint(min, medium) {
+            width: 367px;
+            height: auto;
+        };
+    }
+}
+
+#title3
+{
+    
+    .img-container
+    {
+        width: calc(356px / 2.4);
+        height: calc(526px / 2.4);
+
+        @include breakpoint(min, medium) {
+            width: 356px;
+            height: 526px;
+        };
+    }
+}
+
+.dot
+{
+    width: 60px;
+    height: 60px;
+    background: $colorFrame;
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

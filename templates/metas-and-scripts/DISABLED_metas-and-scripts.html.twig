@@ -1,0 +1,55 @@
+{% block head_brand %}
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="color-scheme" content="light only">
+	<title>{{ title }}</title>
+	<meta name="description" content="{{ description }}" />
+	<meta name="author" content="{{ authors.writer.fname ~ ' ' ~ authors.writer.lname }}">
+	<link rel="shortcut icon" href="https://storytelling.blick.ch/fr/__is_embed_somewhere/favicon/favicon.ico" type="image/vnd.microsoft.icon" />
+	
+    <link rel="apple-touch-icon" sizes="180x180" href="https://storytelling.blick.ch/fr/__is_embed_somewhere/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="https://storytelling.blick.ch/fr/__is_embed_somewhere/favicon/favicon-48x48.png">
+    {# <link rel="icon" type="image/png" sizes="32x32" href="https://storytelling.blick.ch/fr/__is_embed_somewhere/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://storytelling.blick.ch/fr/__is_embed_somewhere/favicon/favicon-16x16.png"> #}
+    <link rel="mask-icon" href="https://storytelling.blick.ch/fr/__is_embed_somewhere/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+
+	<!-- FACEBOOK -->
+	<link rel="image_src" href="{{ app.url ~ imgSocial }}" />
+	<meta property="og:title" content="{{ titlesocial }}" />
+	<meta property="og:site_name" content="Blick.ch/fr" />
+	<meta property="og:image" content="{{ app.url ~ imgSocial }}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="{{ app.url }}" />
+	<meta property="og:description" content="{{ description }}" />
+
+	<!-- TWITTER -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@Blick_fr" />
+	<meta name="twitter:description" content="{{ description }}" />
+	<meta name="twitter:image" content="{{ app.url ~ imgSocial }}" />
+	<meta name="twitter:url" content="{{ app.url }}" />
+
+	<!-- CANONICAL URL -->
+	<link rel="canonical" href="{{ app.url }}"/>
+
+	<!-- Google tag (gtag.js) -->
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WCL8QV');</script>
+    <!-- End Google Tag Manager -->
+{% endblock %}
+
+{% block gtm %}
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCL8QV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+{% endblock %}
+
+{% block consent %}
+	<!-- OneTrust Cookies Consent Notice start for blick.ch -->
+		<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="d57e5842-f42f-46bc-a4ea-4a82bd82322c" ></script>
+		<script type="text/javascript">
+		function OptanonWrapper() { } 
+		</script>
+	<!-- OneTrust Cookies Consent Notice end for blick.ch --> 
+{% endblock %}

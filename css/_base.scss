@@ -1,0 +1,74 @@
+$redBlick: #D22425;
+
+$colorFrame: #F7DFBC;
+$colorGradient1: #FDF3E5;
+$colorGradient2: #FFFAF4;
+
+$colorLight1: #D3A47A;
+$colorLight2: #FFF3E5;
+
+$colorDark1: #A8805C;
+$colorDark2: #746456;
+
+$colorFrameLight: #F3F7F7;
+$colorContrast: #6131A2;
+$colorContrast2: #3172A2;
+
+html
+{
+    scroll-behavior: smooth;
+    max-width: 100%;
+
+    //overflow-x: hidden;
+    
+}
+
+body 
+{
+    position: relative;
+    overflow-x: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: scroll; /* Enable vertical scrolling */
+
+    &.is-visible
+    {
+        opacity: 1;
+        visibility: visible;
+        transition: all .4s;
+    }
+
+    .wrapper
+    {
+        overflow-x: hidden;
+    }
+}
+
+.container
+{
+    margin: auto;
+}
+
+.is-blurry
+{
+    filter: blur(8px);
+}
+
+.mobile-hidden
+{
+    display: none;
+    @include breakpoint(min, medium) {
+        display: block;
+    };
+}
+
+.desktop-hidden
+{
+    display: block;
+    @include breakpoint(min, medium) {
+        display: none;
+    };
+}

@@ -1,0 +1,103 @@
+// -webkit-font-smoothing: antialiased;
+// -moz-osx-font-smoothing: grayscale;
+
+.font-sans
+{
+    font-family: Poppins !important;
+}
+
+.font-serif 
+{
+    font-family: 'Playfair Display', serif !important;
+    //font-family: 'Abril Fatface' !important;
+}
+
+h1
+{
+    font-family: Playfair Display;
+    line-height: .8;
+}
+
+h2:not(#onetrust-policy-title)
+{
+    font-family: 'playfair display';
+    font-size: 40px !important;
+    line-height: .9;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include breakpoint(min, medium) {
+        font-size: 80px !important;
+        line-height: .9;
+    };
+}
+
+#title2 h2 
+{
+    font-size: 30px !important;
+    
+    @include breakpoint(min, medium) {
+        font-size: 80px !important;
+    };
+}
+
+h3 
+{
+    font-family: Poppins;
+    position: relative;
+}
+
+
+h4
+{
+    font-family: 'Playfair display';
+    font-weight: 600 !important;
+}
+
+h5
+{
+    font-family: Poppins;
+    
+}
+
+p:not(#onetrust-policy-text)
+{
+    font-family: poppins;
+}
+
+blockquote
+{
+    font-family: 'Playfair Display';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 34px;
+    line-height: 1.15;
+
+    @include breakpoint(min, medium) {
+        font-size: 34px;
+        line-height: 1.15;
+    };
+
+    .auth
+    {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: bold;
+        color: $colorLight1;
+
+        @include breakpoint(min, medium) {
+            font-size: 18px;
+           
+        };
+    }
+}
+
+.lettrine:first-letter
+{
+    font-size: 570%;
+    font-weight: 600;
+    float : left;
+    margin-top:5px;
+    line-height: 0.7;
+    margin-right: 10px;
+}

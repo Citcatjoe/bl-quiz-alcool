@@ -1,0 +1,139 @@
+{% block header %} <!-- ml mr was 4 / hauteur du header was 12 / translate des icones et logo-->
+	<header class="{{headertheme}} {% if headerBoxed %} headroom container max-w-screen-2xl{% endif %} h-12 w-full fixed top-0 left-0 right-0 z-40">
+		<ul class="h-full inline-block ml-1 md:ml-4">
+			{# <li class="h-full float-left w-8 relative">
+				<div class="btn aside-l-toggle cursor-pointer absolute right-0 h-8 w-8 top-1/2 -translate-y-2/4">
+					<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-menu.svg" alt="icon-menu" class="absolute top-1/2 -translate-y-2/4 h-8 w-8">
+				</div>
+			</li> #}
+			<a href="https://www.blick.ch/fr/" target="_blank">
+				{% if blickWhite %}<li class="h-full float-left"><img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/blick-trans.svg" alt="logo de Blick" class="h-full md:h-12"></li>{% endif %}
+				{% if blickBlack %}<li class="h-full float-left"><img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/blick-black.svg" alt="logo de Blick" class="h-5/6 md:h-12"></li>{% endif %}
+			</a>
+		</ul>
+		<ul class="float-right h-full mr-4 md:mr-4">
+			<li class="h-full relative">
+				<div class="btn aside-r-toggle cursor-pointer absolute right-0 h-8 w-8 top-1/2 -translate-y-2/4">
+					<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-share-b.svg" alt="Icône de partage" class="icon-share is-visible absolute ">
+					<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-cross.svg" alt="Icône de fermeture" class="icon-cross absolute">
+				</div>
+			</li>
+		</ul>
+	</header>
+	<aside class="aside-r w-80 font-sans h-full fixed bg-white z-40 right-0 translate-x-full"> 
+		<div class="aside-header h-12 relative">
+			<span class="absolute left-8 top-1/2 -translate-y-2/4 font-semibold uppercase text-xs mb-2 inline-block">Partager</span>
+			<ul class="float-right h-full mr-4 w-8">
+				<li class="h-full relative w-8">
+					<div class="btn btn-close-aside-r cursor-pointer absolute left-0 h-8 w-8 top-1/2 -translate-y-2/4">
+						<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-cross-black.svg" alt="Icône de fermeture" class="is-visible absolute">
+					</div>
+				</li>     
+			</ul>            
+		</div>
+		<ul class="w-full">
+			<a href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button" target="_blank">
+				<li class="flex items-center h-20 px-8 hover:bg-neutral-200"><img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-facebook-b-noborder.svg" alt="Partager sur Facebook" class="mr-2"><span class="font-light">Facebook</span></li>
+			</a>
+			<a href="https://twitter.com/intent/tweet?text={{ description ~ ' ' ~ app.url ~ ' '|url_encode }}&via=blick_fr" target="_blank">
+				<li class="flex items-center h-20 px-8 hover:bg-neutral-200"><img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-twitter-b-noborder.svg" alt="icône Partager sur Twitter" class="mr-2"><span class="font-light">X</span></li>
+			</a>
+			<a href="whatsapp://send?text={{titlesocial}}%0A%0A{{ app.url }}" target="_blank">
+				<li class="flex items-center h-20 px-8 hover:bg-neutral-200"><img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-wa-b-noborder.svg" alt="Icône Partager sur Whatsapp" class="mr-2"><span class="font-light">Whatsapp</span></li>
+			</a>
+			<a href="mailto:?subject=Format spécial Blick.ch :&nbsp;{{titlesocial}}&amp;body={{titlesocial}}%0A%0A{{description}}%0A%0A{{ app.url }}" rel="nofollow noopener" target="_blank">
+				<li class="flex items-center h-20 px-8 hover:bg-neutral-200"><img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-plane-b-noborder.svg" alt="Partager par email" class="mr-2"><span class="font-light">Email</span></li>
+			</a>
+			<li class="copy flex items-center h-20 px-8 hover:bg-neutral-200 cursor-pointer"><img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-link-b-noborder.svg" alt="Copier l'adresse de la page" class="mr-2"><span class="font-light">Copier l'URL</span></li>
+		</ul>
+	</aside>
+	<aside class="aside-l w-80 h-full fixed bg-white -translate-x-full z-40">
+		<div class="aside-header h-12 relative">
+			<span class="absolute left-8 top-1/2 -translate-y-2/4 font-semibold uppercase text-xs mb-2 inline-block">Episodes</span>
+			<ul class="float-right h-full mr-4 w-8">
+				<li class="h-full relative w-8">
+					<div class="btn btn-close-aside-l cursor-pointer absolute right-0 h-8 w-8 top-1/2 -translate-y-2/4">
+						<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-cross-black.svg" alt="Icône de fermeture" class="is-visible absolute">
+					</div>
+				</li>
+			</ul>
+		</div>
+		<ul class="w-full">
+			<li class="flex items-center h-20 px-8 hover:bg-neutral-200">
+				<span>
+					<span class="text-sm font-light block">Chapitre 1</span>
+					<span class="font-bold block">Mon titre ici ouais</span>
+				</span>
+			</li>
+			<li class="flex items-center h-20 px-8 hover:bg-neutral-200">
+				<span>
+					<span class="text-sm font-light block">Chapitre 1</span>
+					<span class="font-bold block">Mon titre ici ouais</span>
+				</span>
+			</li>
+			<li class="flex items-center h-20 px-8 hover:bg-neutral-200">
+				<span>
+					<span class="text-sm font-light block">Chapitre 1</span>
+					<span class="font-bold block">Mon titre ici ouais</span>
+				</span>
+			</li>
+			<li class="flex items-center h-20 px-8 hover:bg-neutral-200">
+				<span>
+					<span class="text-sm font-light block">Chapitre 1</span>
+					<span class="font-bold block">Mon titre ici ouais</span>
+				</span>
+			</li>
+		</ul>
+	</aside>
+	<div class="copied fixed bg-black z-40 text-white rounded-full px-4 py-2">Url copiée !</div>
+{% endblock %}
+
+{% block menu_overlay %}
+	<div class="menu_overlay fixed bg-black w-full h-full z-30">
+
+	</div>
+{% endblock %}
+
+{% block social %}
+<div class="container flex max-w-2xl <!--py-4  border-y--> mb-8">
+
+	{# <div class="flex items-center mr-2">
+			<div class="align-text-bottom text-xs">
+				<span class="inline-block font-semibold uppercase">Partager</span>
+			</div>
+	</div> #}
+	<div class="ml-auto mr-1">
+		<a target="_blank" href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button" class="flex items-center">
+			<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-facebook-b.svg" alt="Icône de partage facebook" class="rounded-full">
+		</a>
+	</div>
+	<div class="mx-1">
+		<a target="_blank" href="https://twitter.com/intent/tweet?text={{ description ~ ' ' ~ app.url ~ ' '|url_encode }}&via=blick_fr" class="flex items-center">
+			<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-twitter-b.svg" alt="Icône de partage facebook" class="rounded-full">
+		</a>
+	</div>
+	<div class="mx-1">
+		<a target="_blank" href="whatsapp://send?text={{titlesocial}}%0A%0A{{ app.url }}" class="flex items-center">
+			<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-wa-b.svg" alt="Icône de partage facebook" class="rounded-full">
+		</a>
+	</div>
+	<div class="mx-1">
+		<a target="_blank" href="mailto:?subject=Format spécial Blick.ch :&nbsp;{{titlesocial}}&amp;body={{titlesocial}}%0A%0A{{description}}%0A%0A{{ app.url }}" class="flex items-center">
+			<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-plane-b.svg" alt="Icône de partage facebook" class="rounded-full">
+		</a>
+	</div>
+	<div class="ml-1 mr-auto">
+		<span class="copy flex items-center cursor-pointer">
+			<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/icon-link-b.svg" alt="Icône de partage facebook" class="rounded-full">
+		</span>
+	</div>
+	<!-- <div class="author w-52">
+		<a href="" class="flex items-center">
+		<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/fabien-goubet.png" alt="Portrait de Fabien Goubet" class="rounded-full w-12 mr-2.5">
+		<div class="align-text-bottom text-xs">
+			Par <span class="inline-block font-extrabold underline">Fabien Goubet</span>
+			<span class="inline-block">Journaliste Blick</span></div>
+		</a>
+	</div> -->
+</div>
+{% endblock %}

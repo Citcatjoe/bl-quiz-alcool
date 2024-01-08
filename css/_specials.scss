@@ -1,0 +1,95 @@
+////////////////////////////////////////////////////////////////
+//     TAILWIND STYLE CUSTOM CLASSES
+////////////////////////////////////////////////////////////////
+
+.border-custom-btn
+{
+    border-width: 3px;;
+}
+
+.h-custom-title
+{
+    height: 12rem;
+
+    @include breakpoint(min, medium) {
+        height: 27rem;
+    };
+}
+
+.border-custom
+{
+    border-color: $colorFrame;
+}
+
+.left-custom-imgcontainer
+{
+    left: 55%;
+
+    @include breakpoint(min, medium) {
+        left: 55%;
+    };
+}
+
+.text-custom-color
+{
+    color: $redBlick;
+}
+
+.text-custom-dark1
+{
+    color: $colorDark1;
+}
+
+.text-custom-dark2
+{
+    color: $colorDark2;
+}
+
+.bg-custom-dark1
+{
+    background: $colorDark1;
+}
+
+.bg-custom-dark2
+{
+    background: $colorDark2;
+}
+
+
+
+.jBox-wrapper
+{
+
+    &::before { box-shadow: 0 0 5px rgba(0,0,0, 0); }
+    
+    .jBox-container
+    {
+        font-size: 16px;
+        font-family: Roboto mono;
+        box-shadow: 0 0 5px rgba(0,0,0, 0);
+        border: 0;
+
+        .jBox-content
+        {
+            background: $colorFrame;
+            color: rgba(0, 0, 0, .5);
+        }
+
+        .jBox-closeButton
+        {
+            background: $colorFrame !important;
+
+            svg path { fill: rgba(0, 0, 0, .5); }
+            
+        }
+    }
+
+    
+}
+
+.jBox-pointer::after
+{
+    background: $colorFrame;
+    box-shadow: 0 0 5px rgba(0,0,0, 0);
+}
+

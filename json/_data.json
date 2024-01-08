@@ -1,0 +1,134 @@
+[
+    { 
+        "questionContextTitle": "Montée des océans",
+        "questionContextText": "Le film <i>«Le Travina: un paradis perdu»</i> est un documentaire célèbre qui examine les effets de la montée des océans sur le Travina, une petite nation composée de 12 îles de faible altitude et habitée par environ 20'000 personnes. Les principaux secteurs d'activité de ce pays sont le tourisme, la pêche et l'agriculture. Au cours des dix dernières années, la montée du niveau de l'océan a obligé des centaines de Traviniens à déménager vers les hauteurs. Les scientifiques estiment que si on ne réduit pas radicalement les émissions mondiales de dioxyde de carbone, la majeure partie du territoire travinien sera sous l'eau d'ici 2075.<br><br><span class='font-medium'>Selon le réalisateur, l'objectif du documentaire est de «persuader le public que la hausse des températures sur Terre est une menace, en présentant son impact sur la vie des gens».</span><br><br><span class='font-medium'>Les raisons ci-dessous expliquent-t-elles pourquoi parler plus spécifiquement du Travina pourrait persuader le public que la hausse de la température sur Terre est une menace?</span>", 
+        "questionType": "Raison 1",
+        "questionImg": null,
+        "questionTxt": "Les téléspectateurs qui connaissent des gens au Travina apprécieront l'objectif du documentaire",
+        "questionAnswers": [
+            {
+                "answerTxt": "Oui",
+                "answerIsTrue": false
+            },
+            {
+                "answerTxt": "Non",
+                "answerIsTrue": true
+            }
+        ],
+        "questionHint": null
+    },
+    { 
+        "questionType": "Raison 2",
+        "questionImg": null,
+        "questionTxt": "Le changement climatique a déjà touché les habitants du Travina de diverses manières et cela peut être clairement montré",
+        "questionAnswers": [
+            {
+                "answerTxt": "Oui",
+                "answerIsTrue": true
+            },
+            {
+                "answerTxt": "Non",
+                "answerIsTrue": false
+            }            
+        ],
+        "questionHint": null
+    },
+    { 
+        "questionType": "Raison 3",
+        "questionImg": null,
+        "questionTxt": "Le Travina est un exemple de l'impact que pourrait avoir la montée des océans sur d'autres endroits dans le monde",
+        "questionAnswers": [
+            {
+                "answerTxt": "Oui",
+                "answerIsTrue": true
+            },
+            {
+                "answerTxt": "Non",
+                "answerIsTrue": false
+            }
+        ],
+        "questionHint": null
+    },
+    { 
+        "questionType": "Raison 4",
+        "questionImg": null,
+        "questionTxt": "Le gouvernement du Travina veut que ses habitants en apprennent le plus possible sur la production de dioxyde de carbone",
+        "questionAnswers": [
+            {
+                "answerTxt": "Oui",
+                "answerIsTrue": false
+            },
+            {
+                "answerTxt": "Non",
+                "answerIsTrue": true
+            }
+        ],
+        "questionHint": "Les raisons 2 et 3 soutiennent l'objectif du cinéaste. Dans les deux cas, les affirmations décrivent pourquoi la situation de Travina pourrait avoir un impact plus large sur les téléspectateurs, même ceux qui vivent loin de Travina ou qui n'habitent pas près de l'océan.<br><br>En revanche, les raisons 1 et 4 ne décrivent pas pourquoi le réalisateur prendrait Travina comme exemple. Ces affirmations concernent un public restreint et probablement déjà persuadé des effets de l'augmentation des températures mondiales."
+    },
+    { 
+        "questionType": "Exemple 1",
+        "questionContextTitle": "Montée des océans",
+        "questionContextText": "<span class='font-medium'>Certains écologistes craignent que l'attention portée au Travina suite au succès du film ait des conséquences négatives.</span><br><br><span class='font-medium'>Les exemples ci-dessous décrivent-ils une conséquence négative possible du succès du film?</span>",
+        "questionImg": null,
+        "questionTxt": "Les touristes pourraient se précipiter pour aller voir les îles avant qu'il ne soit trop tard, et pourraient arriver sur de grands paquebots pouvant polluer l'air et l'eau",
+        "questionAnswers": [
+            {
+                "answerTxt": "Oui",
+                "answerIsTrue": true
+            },
+            {
+                "answerTxt": "Non",
+                "answerIsTrue": false
+            }
+        ],
+        "questionHint": null
+    },
+    { 
+        "questionType": "Exemple 2",
+        "questionImg": null,
+        "questionTxt": "L'intérêt que le monde entier accorde à la sauvegarde du Travina pourrait détourner l'attention d'un problème bien plus vaste : comment lutter contre le changement climatique mondial?",
+        "questionAnswers": [
+            {
+                "answerTxt": "Oui",
+                "answerIsTrue": true
+            },
+            {
+                "answerTxt": "Non",
+                "answerIsTrue": false
+            }
+        ],
+        "questionHint": null
+    },
+    { 
+        "questionType": "Exemple 3",
+        "questionImg": null,
+        "questionTxt": "Le gouvernement du Travina pourrait avoir des difficultés à faire parvenir rapidement des dons à ceux qui en ont le plus besoin",
+        "questionAnswers": [
+            {
+                "answerTxt": "Oui",
+                "answerIsTrue": false
+            },
+            {
+                "answerTxt": "Non",
+                "answerIsTrue": true
+            }
+        ],
+        "questionHint": null
+    },
+    { 
+        "questionType": "Exemple 4",
+        "questionImg": null,
+        "questionTxt": "Même si les Traviniens pouvaient déménager sur les hauteurs à mesure que le niveau de l'océan monte, ils perdraient une grande partie de leurs terres cultivables",
+        "questionAnswers": [
+            {
+                "answerTxt": "Oui",
+                "answerIsTrue": false
+            },
+            {
+                "answerTxt": "Non",
+                "answerIsTrue": true
+            }
+        ],
+        "questionHint": "Les exemples 1 et 2 décrivent des conséquences directes possibles de l'attention portée à Travina qui pourraient avoir des effets négatifs supplémentaires sur l'île.<br><br>Les exemples 3 et 4 ne sont pas vraiment des conséquences de l'attention que le film suscite pour Travina.<br><br>Dans l'exemple 3, la question de savoir si le gouvernement peut distribuer des dons aux personnes dans le besoin n'a pas grand-chose à voir avec le succès du film, mais plutôt avec la capacité du gouvernement. L'exemple 4 exprime une conséquence qui est liée au fait que les habitants de Travina doivent se déplacer vers un terrain plus élevé, mais cela n'a rien à voir avec le succès du documentaire"
+    }
+]

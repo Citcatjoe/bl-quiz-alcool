@@ -1,0 +1,265 @@
+{# Looking fot these files in given path #}
+{% use '_metas-and-scripts.html.twig' %}
+{% use '_header-and-share.html.twig' %}
+{% use '_html-elements.html.twig' %}
+
+<!DOCTYPE HTML>
+
+<html lang="fr" class="h-full relative"> 
+	<head>
+
+		{# {{ block('consent') }} #}
+
+		<script src="https://cdn.tailwindcss.com"></script>   
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+		{# <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">  #}
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/apexcharts.css">
+		<link rel="stylesheet" href="css/main.css"> 
+
+		{{ block('head_brand') }}
+		
+	</head>
+
+	{% raw %}  
+		<script id="question-template" type="text/x-handlebars-template">
+			{{#each question as |question index|}}
+			<div id="q{{index}}" class="question border-t pt-8">
+				{{#if questionContextTitle}}
+				<div class="bg-slate-200 p-6 rounded-3xl text-slate-500 italic mb-8">
+					<p class="text-slate-600 mb-6 underline">Contexte:</p>
+					<p class="text-xl font-semibold mb-6">
+						{{questionContextTitle}}
+					</p>
+					<p class="text-lg font-light">
+						{{{questionContextText}}}
+					</p>
+				</div>
+				{{/if}}
+				<span class="font-sans font-semibold antialiased text-2xl text-custom-color block mb-6">
+					{{questionType}} 
+					Question {{indexFormatter index}} / {{totalQuestions}}
+				</span>
+				{{#if questionImg}}
+				<figure class="px-0 md:px-8 mb-6 relative">
+					<img src="img/this/{{questionImg}}" alt="" class="">
+					{{#if questionImgCredit}}
+					<span class="block text-xs font-sans opacity-50 uppercase mt-2">{{questionImgCredit}}</span>
+					
+					{{/if}}
+				</figure>
+				{{/if}}
+				<span class="font-sans font-semibold antialiased text-xl md:text-2xl block mb-8">
+					{{questionTxt}}
+				</span>
+				
+				{{#isEqual questionAnswerType "dropdown-2"}}
+				<div>
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 mb-3 md:mb-4">
+						<div>
+							<!--<label for="dropdown-a-q{{indexFormatter index}}" class="block font-sans mb-2 ml-4 md:ml-0 text-md font-light text-black text-left md:text-center opacity-70">Première personne</label>-->
+							<select id="dropdown-a-q{{indexFormatter index}}" class="dropdown-a bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-4 mb-3 md:mb-0">
+							<option selected="">Première personne</option>
+							{{#each questionAnswers}}
+							<option value="{{answerTxt}}">{{answerTxt}}</option>
+							{{/each}}
+							</select>
+						</div>
+						<div>
+							<!--<label for="dropdown-b-q{{indexFormatter index}}" class="block mb-2 text-md font-medium text-gray-900 text-left md:text-center">Seconde personne</label> -->
+							<select id="dropdown-b-q{{indexFormatter index}}" class="dropdown-b bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-4">
+							<option selected="">Seconde personne</option>
+							{{#each questionAnswers}}
+							<option value="{{answerTxt}}">{{answerTxt}}</option>
+							{{/each}}
+							</select>
+						</div>
+					</div>
+					<button class="submit bg-white rounded-full border-custom-btn border-black text-center text-2xl font-sans font-semibold antialiased rounded-full py-4 px-8 w-full mb-10">Soumettre</button>
+				</div>
+				{{/isEqual}}
+
+				{{#isEqual questionAnswerType "unique"}}
+				<ul class="answers mb-10">
+					{{#each questionAnswers}}
+					<li class="answer font-sans font-light antialiased text-xl md:text-2xl bg-slate-100 hover:bg-slate-200 cursor-pointer rounded-full py-4 px-8 mb-4">{{answerTxt}}</li>
+					{{/each}}
+				</ul>
+				{{/isEqual}}
+
+				<span class="hint font-sans font-light text-normal antialiased block border-l-4 border-slate-100 pl-5 mb-10">
+					
+				</span>
+			</div>
+			{{/each}}
+		</script>
+
+		
+	{% endraw %}
+	
+	{# {{ block('frame') }} #}
+	<body class="bg-white h-full"> 
+
+		<div class="wrapper">
+		<!-- {{ block('loading_overlay') }} -->
+		{{ block('gtm') }}
+		
+		{{ block('header') }}
+		{{ block('menu_overlay') }}
+		{# <?php include 'hb_header_tp.php'; ?> #} 
+		
+		
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white pt-16 md:pt-24">
+			<div class="container py-8 max-w-2xl">
+				<h1 class="font-serif font-semibold text-4xl md:text-5xl text-center">Saurez-vous reconnaître les enfants maudits de la rédaction?</h1>
+			</div>            
+			{{ block('social') }}
+		</div>
+		
+		<div class="hero">
+			<div class="container h-full max-w-screen-xl relative px-4 md:px-20">
+
+				<div class="mb-12 -mx-4 relative">
+					<img src="img/this/opening.png" alt="" class="mx-auto w-full max-w-2xl">
+					<span class="absolute bottom-3 text-white text-xs font-sans left-3 opacity-50 uppercase">Midjourney</span>
+				</div>	
+				
+			</div>
+		</div>
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white">
+			
+			{{ block('authors') }}
+			
+			<div class="container mt-8 mb-12 max-w-2xl">
+				<p class="lettrine text-md md:text-lg font-light mb-6">
+
+					Dans les coulisses de la rédaction se déroulent d'étranges expériences donnant parfois naissance à de singuliers personnages. Nés à l'écart des projecteurs mais élevés au rythme effréné des scoops et de l'actualité, ces enfants maudits partagent une existence unique, oscillant entre réalité médiatique et quête d'identité personnelle. Leur existence ? Un curieux amalgame de processus évolutifs et d'interventions humaines.
+				</p>
+
+				<p class="text-lg font-light">
+					Dans ce quiz, chaque question est un pas vers la découverte, et chaque réponse est la promesse d'une rencontre fascinante. Préparez-vous à explorer les coins les plus secrets et les plus étranges de la rédaction, et à découvrir les fruits d'expériences interdites.
+				</p>
+
+			
+
+				<div class="questions pt-10 mb-24"></div>
+
+				<div class="warning font-sans text-center border-t py-12">
+					Répondez à toutes les questions pour calculer votre résultat
+				</div>
+
+				<div class="sumup border-t pt-12">
+
+					
+					<div class="bg-slate-100 px-8 py-10 rounded-3xl">
+
+					
+						<span class="block text-center font-sans font-semibold text-4xl mb-10">Votre résultat</span>
+						<div class="gauge mb-10">
+							<img src="img/this/gauge-cursor.png" alt="" class="gauge-cursor absolute w-2 md:w-4 -top-3 md:-top-5">
+							<img src="img/this/gauge.png" alt="" class="gauge-bg">
+						</div>
+						<span class="nb-results block text-center text-4xl font-sans font-semibold mb-6"><span class="nb-correct">8</span> / <span class="nb-question">10</span></span>
+						<span class="percent-results block text-center text-2xl font-sans font-light mb-10 md:mb-12">soit <span class="percent-correct font-semibold">80</span>% de réponses totalement correctes</span>
+						<span class="points-results block text-center text-xl font-sans font-light mb-10 md:mb-12 -mt-10">Vous avez retrouvé <span class="nb-points font-semibold">12</span> personnes sur <span class="nb-points-possibles">13</span> possibles</span>
+						<span class="final-text block text-center text-base md:text-xl font-sans font-light mb-12 rounded-3xl bg-slate-200 p-6 md:p-8">Merci d'avoir joué! Bonne fêtes à tous et à bientôt!</span>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-x-6">
+							<a href="." class="block">
+							<button class="btn-redo bg-white rounded-full border-custom-btn border-black text-center text-2xl font-sans font-semibold antialiased rounded-full py-4 px-8 w-full mb-4 md:mb-0">Refaire le test</button></a>
+							<button class="btn-shar bg-white rounded-full border-custom-btn border-black text-center text-2xl font-sans font-semibold antialiased rounded-full py-4 px-8">Partager</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		
+
+
+
+		
+		<!-- <footer class="container max-w-screen-2xl px-4 pt-20 pb-20 md:pb-40 bg-custom-gray relative font-sans overflow-auto">
+			
+			<div class="container max-w-custom relative">
+				<img src="img/blick.svg" alt="" class="w-32 absolute -top-20 -left-4 md:left-0">
+				<span class="copyright font-bold opacity-30 absolute right-0 -top-custom-copyright w-56 md:w-full text-right">Blick | fr - Le média suisse © Blick.ch/fr 2023.</span>
+				<div class="w-full md:w-3/4 md:grid md:grid-cols-3 md:gap-x-10">
+					<div>
+						<ul>
+							<li class="h-16 border-b-2 border-gray-300 relative"><a href="https://storytelling.blick.ch/storytelling/2021/team_romandie/?_gl=1*zncj5u*_ga*MjAwODM5NjMxNC4xNjY5MDQ1MDgx*_ga_NKTZ1Z6QY0*MTY4MzIwNzI3OS42LjEuMTY4MzIwNzI4MC4wLjAuMA..&_ga=2.214209751.1356322992.1683191888-2008396314.1669045081" target="_blank" class="block absolute top-1/2 -translate-y-1/2">L'équipe</a></li>
+							<li class="h-16 border-b-2 border-gray-300 relative"><a href="https://www.blick.ch/fr/services/impressum-groupe-blick-id16490742.html" target="_blank" class="block absolute top-1/2 -translate-y-1/2">Impressum</a></li>
+							<li class="h-16 border-b-2 border-gray-300 relative"><a href="https://www.ringier-advertising.ch/fr/portfolio/digital/blick-ch/" target="_blank" class="block absolute top-1/2 -translate-y-1/2">Publicité</a></li>
+							<li class="h-16 border-b-2 md:border-b-0 border-gray-300 relative"><a href="https://www.blick.ch/fr/services/dispositions-de-protection-des-donnees-id18211424.html" target="_blank" class="block absolute top-1/2 -translate-y-1/2">Protection des données</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="h-16 border-b-2 border-gray-300 relative"><a href="https://www.blick.ch/fr/services/conditions-generales-d-utilisation-du-groupe-blick-id16443050.html" target="_blank" class="block absolute top-1/2 -translate-y-1/2">Conditions générales</a></li>
+							<li class="h-16 border-b-2 border-gray-300 relative"><a href="https://www.blick.ch/fr/dossiers/" target="_blank" class="block absolute top-1/2 -translate-y-1/2">Dossiers</a></li>
+							<li class="h-16 border-b-2 border-gray-300 relative"><a href="https://www.blick.ch/fr/newsletters/newsletter-id16503687.html" target="_blank" class="block absolute top-1/2 -translate-y-1/2">Newsletters</a></li>
+							<li class="h-16 border-b-2 md:border-b-0 border-gray-300 relative"><a href="https://www.blick.ch/fr/services/app-id17067782.html" target="_blank" class="block absolute top-1/2 -translate-y-1/2">Application</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="h-16 border-b-2 border-gray-300 relative"><a href="https://www.facebook.com/blickfr" target="_blank" class="block absolute top-1/2 -translate-y-1/2">Facebook</a></li>
+							<li class="h-16 border-b-2 border-gray-300 relative"><a href="https://www.instagram.com/blick_fr" target="_blank" class="block absolute top-1/2 -translate-y-1/2">Instagram</a></li>
+							<li class="h-16 border-b-2 border-gray-300 relative"><a href="https://twitter.com/Blick_fr" target="_blank" class="block absolute top-1/2 -translate-y-1/2">Twitter</a></li>
+							<li class="h-16 relative"><a href="https://www.youtube.com/channel/UCKVxUfdtZsqtg3B3-wjrLOA" target="_blank" class="block absolute top-1/2 -translate-y-1/2">Youtube</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<img src="img/footer-illustration.svg" alt="" class="absolute bottom-0 left-0 w-full">
+
+		</footer> -->
+		
+
+		
+
+		<footer class="container py-8 max-w-full relative">   
+			<div class="w-80 top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 absolute">
+				{{ block('credits') }}  
+			</div>
+		</footer> 
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.js" integrity="sha512-qwi9BHx0+QtW8krMaXObe76bUkPf8nRJOufgT5GS7C74s2sV+neksCVUhAWuMSXxZzKHiM3RuADPmWbhguWEIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+		<script src="js/counter-up.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+		<!-- <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script> -->
+		
+		<!-- <script src="js/yt.js"></script> --> 
+		<script src="js/vendor/modernizr-3.11.2.min.js"></script> 
+		<!-- <script src="js/plugins.js"></script> -->
+		<script src="js/header.js"></script>
+		<script src="js/apexcharts.min.js"></script>
+		<!-- <script src="js/charts.js"></script> -->
+		<script src="js/main.js"></script>
+		{# <script src="js/intro.js"></script> #}
+		<!-- <script src="js/headroom.min.js"></script> -->
+		
+
+	</div>
+	</body>
+</html>

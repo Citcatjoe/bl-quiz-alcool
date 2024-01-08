@@ -1,0 +1,76 @@
+{% block loading_overlay %}
+	<div class="fixed w-full h-full bg-white z-50">
+		<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/blick.svg" alt="Logo de Blick" class="w-64 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">  
+	</div>
+{% endblock %}
+
+{% block authors %}
+<div class="container flex py-4 max-w-2xl border-y">
+	<div class="author w-52">
+		{# <a target="_blank" href="https://www.blick.ch/fr/auteurs/gre-gory-beaud-journaliste-blick-id16519809.html" class="flex items-center"> #}
+		<span class="flex items-center">
+			<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/{{authors.writer.fname|replace({'é': 'e'})|lower}}-{{ authors.writer.lname|replace({' ': '-'})|lower }}.{{authors.writer.filetype}}" alt="Portrait de&nbsp;{{authors.writer.fname}}&nbsp;{{authors.writer.lname}}" class="rounded-full w-12 mr-2.5">
+			<div class="align-text-bottom text-xs">
+				Par <span class="inline-block font-extrabold">{% if authors.writer.url is defined and authors.writer.url is not empty %}<a href="{{authors.writer.url}}" target="_blank" class="underline">{% endif %}{{ authors.writer.fname ~ ' ' ~ authors.writer.lname }}{% if authors.writer.url is defined and authors.writer.url is not empty %}</a>{% endif %}</span>
+				<span class="inline-block">{{authors.writer.title}}</span>
+			</div>
+		</span>
+		{# </a> #}
+	</div>
+	<!-- <div class="author w-52">
+		<a href="" class="flex items-center">
+		<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/fabien-goubet.png" alt="Portrait de Fabien Goubet" class="rounded-full w-12 mr-2.5">
+		<div class="align-text-bottom text-xs">
+			Par <span class="inline-block font-extrabold underline">Fabien Goubet</span>
+			<span class="inline-block">Journaliste Blick</span></div>
+		</a>
+	</div> -->
+</div>
+{% endblock %}
+
+{% block scroller %}
+<div class="scroller text-center pt-0 md:pt-6 scale-75 md:scale-100 absolute left-1/2 -translate-x-1/2 invisible md:visible">
+	<div class="mouse"></div>
+</div>
+{% endblock %}
+
+{% block credits %}
+<div class="credits text-white text-xl">
+	<a href="https://www.blick.ch/fr/" target="_blank>"><img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/blick.svg" alt="Logo de Blick" class="w-36 mb-8"></a>
+	<p class="mb-8"> 
+		<span class="font-thin opacity-80">Production</span><br>
+		<span class="font-semibold">Creative Lab Blick Suisse romande</span>
+	</p> 
+	{% if authors.photos %}
+	{# <p class="mb-8">
+		<span class="font-thin opacity-80">Images</span><br>
+		<span class="font-semibold">{{authors.photos}}</span>
+	</p> #}
+	{% endif %}
+	{% if authors.videos %}
+	<p class="mb-8">
+		<span class="font-thin opacity-80">Vidéos</span><br>
+		<span class="font-semibold">{{authors.videos}}</span>
+	</p>
+	{% endif %}
+	{% if authors.writer %}
+	<p class="mb-8">
+		<span class="font-thin opacity-80">Texte</span><br>
+		<span class="font-semibold">{{ authors.writer.fname ~ ' ' ~ authors.writer.lname }}</span>
+	</p>
+	{% endif %}
+	{% if authors.dev %}
+	<p>
+		<span class="font-thin opacity-80">Développement</span><br>
+		<span class="font-semibold">{{authors.dev}}</span>
+	</p>
+	{% endif %}
+</div>
+{% endblock %}
+
+{% block frame %}
+<div class="frame fixed w-full md:h-6 z-40"></div>
+<div class="frame fixed w-full md:h-6 z-40 bottom-0"></div>
+<div class="frame fixed h-full md:w-6 z-40"></div>
+<div class="frame fixed h-full md:w-6 z-40 right-0"></div>
+{% endblock %}

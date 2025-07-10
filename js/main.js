@@ -8,15 +8,17 @@
         // Handle the data once it's loaded
         data = response;
 
-        // Some vars, including scroll magic controller
+        // Common Vars
         var controller = new ScrollMagic.Controller();
         var nbQuestion = data.length;
         var nbAnswered = 0;
+        var nbPoints = 0;
+
+        // Used in UNIQUE and DROPDOWN-2 questions
         var nbCorrect = 0;
-        
         var percentCorrect = 0;
 
-        var nbPoints = 0;
+        
 
 
 
@@ -40,8 +42,10 @@
             }
         }
 
+        //var nbPoints = 0;
+
 // Affichage du résultat dans la console
-console.log('Le nombre de points possibles est : ' + nbPointsPossibles);
+//console.log('Le nombre de points possibles est : ' + nbPointsPossibles);
 
 
 
@@ -52,16 +56,31 @@ console.log('Le nombre de points possibles est : ' + nbPointsPossibles);
         // This updates vars when answering a question. Check if it is time to remove the warning
         updateStats();
         function updateStats(){
-            $('.nb-question').html(nbQuestion);
-            $('.nb-correct').html(nbCorrect);
-            $('.percent-correct').html(percentCorrect);
+            //$('.nb-question').html(nbQuestion);
+            //$('.nb-correct').html(nbCorrect);
+            //$('.percent-correct').html(percentCorrect);
+            $('.nb-correct').html(nbPoints);
             $('.nb-points').html(nbPoints);
             $('.nb-points-possibles').html(nbPointsPossibles);
-
             //All Q should be answered for removing the message
             if (nbAnswered === nbQuestion)
             {
                 $('.warning').fadeOut();
+            }
+        }
+
+        function updateFinalText(nbPoints){
+            if (nbPoints <= 3)
+            {
+                $('.final-text').html("text 1");
+            }
+            if (nbPoints == 4)
+            {
+                $('.final-text').html("text 2");
+            }
+            if (nbPoints > 4)
+            {
+                $('.final-text').html("text 3");
             }
         }
 
@@ -85,7 +104,7 @@ console.log('Le nombre de points possibles est : ' + nbPointsPossibles);
         }
 
         // This happens when clicking on a answer
-        $('.answer').on('click', function () {
+        $('.answer-unique').on('click', function () {
 
             // This is done if the question has NOT been answered (security breach here because based on "answered" class)
             if(!$(this).closest('.question').hasClass('answered'))
@@ -113,7 +132,7 @@ console.log('Le nombre de points possibles est : ' + nbPointsPossibles);
                 // Answer is false here
                     else {
                     $(this).addClass('error');
-                    $(this).closest('.question').find('.answer').each(function () {
+                    $(this).closest('.question').find('.answer-unique').each(function () {
                         if (data[questionIndex].questionAnswers[$(this).index()].answerIsTrue) {
                             $(this).addClass('correct');
                         }
@@ -137,7 +156,53 @@ console.log('Le nombre de points possibles est : ' + nbPointsPossibles);
             }
         });
 
-        $('.submit').on('click', function () {
+        // This happens when clicking on a answer
+        $('.answer-unique-ponderation').on('click', function () {
+
+            // This is done if the question has NOT been answered (security breach here because based on "answered" class)
+            if(!$(this).closest('.question').hasClass('answered'))
+            {
+                nbAnswered = nbAnswered + 1;
+                
+                
+
+                // Check if the answer is true or not
+                var questionIndex = $(this).closest('.question').attr('id').replace('q', '');
+                var answerIndex = $(this).index();
+                var answerScore = data[questionIndex].questionAnswers[answerIndex].answerScore;
+                var questionHint = data[questionIndex].questionHint;
+
+              
+                //alert(nbPoints);
+
+                nbPoints = nbPoints + answerScore;
+
+                console.log(nbPoints);
+
+                
+                $(this).addClass('selected');
+                $(this).siblings().addClass('faded');
+                if (questionHint) {
+                    //$(this).closest('.question').find('.hint').html('<span class="correct-txt font-semibold underline decoration-2">Correct:</span> ' + questionHint);
+                    $(this).closest('.question').find('.hint').html('<span class="font-semibold underline decoration-2">Explications:</span> ' + questionHint);
+                }
+                    
+                
+               
+
+                // Add the "answered" class here. Not ideal
+                $(this).closest('.question').addClass('answered');
+
+                // Calculate the % correct answers
+                percentCorrect = (100 / 40 * nbPoints).toFixed(2);
+
+                // Update vars
+                updateStats();
+                //updateFinalText(nbPoints);
+            }
+        });
+
+        $('.submit-dropdown-2').on('click', function () {
             
             if(!$(this).parent().parent().hasClass('answered'))
             {
@@ -145,7 +210,7 @@ console.log('Le nombre de points possibles est : ' + nbPointsPossibles);
 
                 
                 // Trouve l'index de la question associée à ce bouton
-                var questionIndex = $(this).index('.submit');
+                var questionIndex = $(this).index('.submit-dropdown-2');
                 var questionHint = data[questionIndex].questionHint;
                 // Obtient les réponses de la question sélectionnée
                 var questionAnswers = data[questionIndex].questionAnswers;
@@ -278,9 +343,9 @@ console.log('Le nombre de points possibles est : ' + nbPointsPossibles);
                             .to($gaugeCursor, .5, { autoAlpha: 1, y: "+=20px", ease: Power4.easeInOut, onComplete: updateNumber }, "-=0.5")
                             .to($nbResults, .3, { autoAlpha: 1, y: "+=10px", ease: Power4.easeInOut })
                             .to($gaugeCursor, 2, { left: percentCorrect + "%", ease: Power4.easeInOut, onComplete: updatePercent })
-                            .to($percentResults, .3, { autoAlpha: 1, y: "+=10px", ease: Power4.easeInOut })
-                            .to($pointsResults, .3, { autoAlpha: 1, y: "+=10px", ease: Power4.easeInOut, onComplete: updatePoints })
-                            .to($finalText, .3, { autoAlpha: 1, ease: Power4.easeInOut }, "+=1.5")
+                            // .to($percentResults, .3, { autoAlpha: 1, y: "+=10px", ease: Power4.easeInOut })
+                            // .to($pointsResults, .3, { autoAlpha: 1, y: "+=10px", ease: Power4.easeInOut, onComplete: updatePoints })
+                            .to($finalText, .3, { autoAlpha: 1, ease: Power4.easeInOut }, "+=0.25")
                             .to($btnRedo, .7, { autoAlpha: 1,  y: "+=10px", ease: Power4.easeInOut }, "+=1.7")
                             .to($btnShar, .7, { autoAlpha: 1,  y: "+=10px", ease: Power4.easeInOut });
                         gaugeTl.play();
@@ -335,124 +400,7 @@ console.log('Le nombre de points possibles est : ' + nbPointsPossibles);
         console.error('No quiz data found', textStatus, errorThrown);
     });
 
-    // The questions array
-
-    // data = [
-    //     { 
-    //         questionImg: "q-chihuahuas.png",
-    //         questionTxt: "Combien de chihuahuas se cachent dans cette image? Image facultative, nombre de propositions de votre choix, une seule bonne réponse",
-    //         questionAnswers: [
-    //             {
-    //                 answerTxt: "8",
-    //                 answerIsTrue: false
-    //             },
-    //             {
-    //                 answerTxt: "9",
-    //                 answerIsTrue: false
-    //             },
-    //             {
-    //                 answerTxt: "10",
-    //                 answerIsTrue: true
-    //             }
-    //         ],
-    //         questionHint: "Texte de complément ici (facultatif)"
-    //     },
-    //     { 
-    //         questionImg: "q-poodle.png",
-    //         questionTxt: "Combien de vrais caniches se cachent dans cette image? Image facultative, nombre de propositions de votre choix, une seule bonne réponse",
-    //         questionAnswers: [
-    //             {
-    //                 answerTxt: "14",
-    //                 answerIsTrue: false
-    //             },
-    //             {
-    //                 answerTxt: "15",
-    //                 answerIsTrue: true
-    //             },
-    //             {
-    //                 answerTxt: "16",
-    //                 answerIsTrue: false
-    //             }
-    //         ],
-    //         questionHint: "Texte de complément ici (facultatif)"
-    //     },
-    //     { 
-    //         questionImg: "q-puddles.png",
-    //         questionTxt: "Combien de vrais caniches se cachent dans cette image? Image facultative, nombre de propositions de votre choix, une seule bonne réponse",
-    //         questionAnswers: [
-    //             {
-    //                 answerTxt: "5",
-    //                 answerIsTrue: false
-    //             },
-    //             {
-    //                 answerTxt: "6",
-    //                 answerIsTrue: false
-    //             },
-    //             {
-    //                 answerTxt: "7",
-    //                 answerIsTrue: true
-    //             }
-    //         ],
-    //         questionHint: "Texte de complément ici (facultatif)"
-    //     },
-    //     { 
-    //         questionImg: "q-shar-pei.png",
-    //         questionTxt: "Combien de Sharpeis se cachent dans cette image? Image facultative, nombre de propositions de votre choix, une seule bonne réponse",
-    //         questionAnswers: [
-    //             {
-    //                 answerTxt: "13",
-    //                 answerIsTrue: false
-    //             },
-    //             {
-    //                 answerTxt: "14",
-    //                 answerIsTrue: true
-    //             },
-    //             {
-    //                 answerTxt: "15",
-    //                 answerIsTrue: false
-    //             }
-    //         ],
-    //         questionHint: "Texte de complément ici (facultatif)"
-    //     },
-    //     { 
-    //         questionImg: "q-shar-pei2.png",
-    //         questionTxt: "Combien de caniches se cachent dans cette image? Image facultative, nombre de propositions de votre choix, une seule bonne réponse",
-    //         questionAnswers: [
-    //             {
-    //                 answerTxt: "5",
-    //                 answerIsTrue: false
-    //             },
-    //             {
-    //                 answerTxt: "6",
-    //                 answerIsTrue: false
-    //             },
-    //             {
-    //                 answerTxt: "7",
-    //                 answerIsTrue: true
-    //             }
-    //         ],
-    //         questionHint: "Texte de complément ici (facultatif)"
-    //     },
-    //     { 
-    //         questionImg: "q-sheep-dog.png",
-    //         questionTxt: "Combien chien se cachent dans cette image? Image facultative, nombre de propositions de votre choix, une seule bonne réponse",
-    //         questionAnswers: [
-    //             {
-    //                 answerTxt: "6",
-    //                 answerIsTrue: false
-    //             },
-    //             {
-    //                 answerTxt: "7",
-    //                 answerIsTrue: false
-    //             },
-    //             {
-    //                 answerTxt: "8",
-    //                 answerIsTrue: true
-    //             }
-    //         ],
-    //         questionHint: "Texte de complément ici (facultatif)"
-    //     }
-    // ];
+    
 
     // Base introduction effects
 

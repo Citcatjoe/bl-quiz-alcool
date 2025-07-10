@@ -9,14 +9,6 @@
   ],
   "creatorBuild" : "34434",
   "files" : {
-    "\/_html-elements.html.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/_html-elements.html.twig",
-      "oF" : 0
-    },
     "\/composer.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -52,7 +44,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_base.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -67,7 +59,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_components.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -82,7 +74,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_fonts.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -97,7 +89,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/_gerillass-prefix.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -112,7 +104,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/_gerillass.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -127,7 +119,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_adaptive.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -142,7 +134,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_after.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -157,7 +149,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_all-buttons.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -172,7 +164,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_all-text-inputs.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -187,7 +179,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_antialias.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -202,7 +194,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_background-dots.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -217,7 +209,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_background-image.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -232,7 +224,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_background-stripes.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -247,7 +239,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_before.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -262,7 +254,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_border-box.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -277,7 +269,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_border-radius.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -292,7 +284,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_brand-logo.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -307,7 +299,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_breakpoint.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -322,7 +314,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_breakpointer.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -337,7 +329,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_center.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -352,7 +344,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_circle.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -367,7 +359,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_clearfix.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -382,7 +374,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_columnizer.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -397,7 +389,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_counter.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -412,7 +404,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_ellipsis.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -427,7 +419,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_escape-to-parent.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -442,7 +434,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_except.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -457,7 +449,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_font-face.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -472,7 +464,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_hide.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -487,7 +479,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_linear-gradient.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -502,7 +494,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_loadify.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -517,7 +509,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_only.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -532,7 +524,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_placeholder-shown.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -547,7 +539,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_placeholder.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -562,7 +554,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_position.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -577,7 +569,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_radial-gradient.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -592,7 +584,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_ratio-box.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -607,7 +599,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_remove.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -622,7 +614,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_reset-css.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -637,7 +629,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_reset-figure.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -652,7 +644,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_resizable.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -667,7 +659,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_responsive-image.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -682,7 +674,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_responsive-video.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -697,7 +689,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_scissors.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -712,7 +704,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_screen-agent.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -727,7 +719,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_sizer.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -742,7 +734,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_smartphone.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -757,7 +749,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_sprite.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -772,7 +764,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_stretched-link.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -787,7 +779,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_tablet.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -802,7 +794,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_text-gradient.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -817,7 +809,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_text-image.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -832,7 +824,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_text-selection.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -847,7 +839,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_text-shadow.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -862,7 +854,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_text-stroke.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -877,7 +869,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/library\/_triangle.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -892,7 +884,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/lists\/_list-of-anchor-pseudo-classes.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -907,7 +899,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/lists\/_list-of-buttons.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -922,7 +914,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/lists\/_list-of-counter-styles.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -937,7 +929,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/lists\/_list-of-directions.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -952,7 +944,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/lists\/_list-of-length-units.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -967,7 +959,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/lists\/_list-of-text-inputs.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -982,7 +974,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/maps\/_map-for-breakpoints.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -997,7 +989,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/maps\/_map-for-directions.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1012,7 +1004,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/maps\/_map-for-font-formats.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1027,7 +1019,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/maps\/_map-for-positions.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1042,7 +1034,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/maps\/_map-for-smartphones.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1057,7 +1049,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/maps\/_map-for-tablets.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1072,7 +1064,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_clear-unit.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1087,7 +1079,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_clear-whitespace.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1102,7 +1094,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_convert-to-em.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1117,7 +1109,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_convert-to-number.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1132,7 +1124,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_darken.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1147,7 +1139,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_font-sizer.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1162,7 +1154,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_font-source.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1177,7 +1169,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_is-color.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1192,7 +1184,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_is-number.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1207,7 +1199,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_is-time.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1222,7 +1214,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_lighten.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1237,7 +1229,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_map-deep-get.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1252,7 +1244,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_null.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1267,7 +1259,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_pixelify.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1282,7 +1274,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_pseudo-selector.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1297,7 +1289,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_remify.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1312,7 +1304,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_shorthand-property.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1327,7 +1319,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_validate-breakpoint.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1342,7 +1334,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_validate-length.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1357,7 +1349,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_gerillass\/utilities\/_validate-scissors.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1372,7 +1364,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_header 2.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1387,7 +1379,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_header.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1402,7 +1394,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_scroller.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1417,7 +1409,7 @@
       "oA" : 1,
       "oAP" : "\/css\/_specials.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1464,7 +1456,7 @@
       "oA" : 1,
       "oAP" : "\/css\/hero.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1499,7 +1491,7 @@
       "oA" : 0,
       "oAP" : "\/css\/main.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -1820,6 +1812,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/this\/gauge-going-bad.png" : {
+      "ft" : 32768,
+      "iS" : 43101,
+      "oA" : 0,
+      "oAP" : "\/img\/this\/gauge-going-bad.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/this\/gauge.png" : {
       "ft" : 32768,
       "iS" : 47797,
@@ -1831,6 +1836,19 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/this\/opening.jpg" : {
+      "ft" : 16384,
+      "iS" : 418059,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/this\/opening.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/img\/this\/opening.png" : {
@@ -2396,7 +2414,7 @@
     },
     "\/social.jpg" : {
       "ft" : 16384,
-      "iS" : 238281,
+      "iS" : 688820,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/social.jpg",
@@ -8929,7 +8947,7 @@
       "cssoStyle" : 0,
       "decimalPrecision" : 10,
       "emitCharset" : 1,
-      "outputStyle" : 0,
+      "outputStyle" : 1,
       "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 0,
       "shouldRunBless" : 0,

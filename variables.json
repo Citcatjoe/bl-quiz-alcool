@@ -1,16 +1,16 @@
 {
-	"title": "Saurez-vous reconnaître les enfants maudits de la rédaction?",
-	"titlesocial": "Saurez-vous reconnaître les enfants maudits de la rédaction?",
-	"description": "Dans ce quiz, chaque question est un pas vers l'aventure et chaque réponse la promesse d'une rencontre fascinante.",
+	"title": "Buvez-vous trop d’alcool? Faites le test",
+	"titlesocial": "Buvez-vous trop d’alcool? Faites le test",
+	"description": "Soirées, repas, apéros… les occasions de consommer de l’alcool sont nombreuses et, si le Dry January bat son plein, beaucoup ne parviennent pas à tenir longtemps sans boire. Mais à partir de quel moment est-on vraiment dépendant? Faites le test et évaluez votre consommation.",
 	"authors": {
 		"photos": "Midjourney",
 		"videos": null,
 		"writer": {
-			"fname": "Scientifique",
-			"lname": "Fou",
-			"title": "Journaliste Blick",
+			"fname": "Camille",
+			"lname": "Bertholet",
+			"title": "Responsable des nouvelles audiences",
 			"filetype": "png",
-			"url": null
+			"url": "https://www.blick.ch/fr/auteurs/camille-bertholet-id17387753.html"
 		},
 		"dev": "César Greppin"
 	},

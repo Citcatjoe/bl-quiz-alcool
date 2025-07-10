@@ -34,7 +34,7 @@ if (file_exists($templateFilePath2)) {
 } else {
     $dirs[] = __DIR__ . '/../../__is_embed_somewhere/php/header-and-share'; 
 }
-
+														 
 $templateFilePath3 = __DIR__ . '/templates/html-elements/_html-elements.html.twig';
 if (file_exists($templateFilePath3)) {
     $dirs[] = __DIR__ . '/templates/html-elements';

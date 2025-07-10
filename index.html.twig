@@ -5,10 +5,10 @@
 
 <!DOCTYPE HTML>
 
-<html lang="fr" class="h-full relative"> 
+<html lang="fr" class="relative"> 
 	<head>
 
-		{# {{ block('consent') }} #}
+		{{ block('consent') }}  
 
 		<script src="https://cdn.tailwindcss.com"></script>   
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
 
-		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/normalize.css"> 
 		<link rel="stylesheet" href="css/apexcharts.css">
 		<link rel="stylesheet" href="css/main.css"> 
 
@@ -62,6 +62,22 @@
 				<span class="font-sans font-semibold antialiased text-xl md:text-2xl block mb-8">
 					{{questionTxt}}
 				</span>
+
+				{{#isEqual questionAnswerType "unique"}}
+				<ul class="answers mb-10">
+					{{#each questionAnswers}}
+					<li class="answer-unique font-sans font-light antialiased text-xl md:text-2xl bg-slate-100 hover:bg-slate-200 cursor-pointer rounded-full py-4 px-8 mb-4">{{answerTxt}}</li>
+					{{/each}}
+				</ul>
+				{{/isEqual}}
+
+				{{#isEqual questionAnswerType "unique-ponderation"}}
+				<ul class="answers mb-10">
+					{{#each questionAnswers}}
+					<li class="answer-unique-ponderation font-sans font-light antialiased text-xl md:text-2xl bg-slate-100 hover:bg-slate-200 cursor-pointer rounded-full py-4 px-8 mb-4">{{answerTxt}}</li>
+					{{/each}}
+				</ul>
+				{{/isEqual}}
 				
 				{{#isEqual questionAnswerType "dropdown-2"}}
 				<div>
@@ -85,17 +101,11 @@
 							</select>
 						</div>
 					</div>
-					<button class="submit bg-white rounded-full border-custom-btn border-black text-center text-2xl font-sans font-semibold antialiased rounded-full py-4 px-8 w-full mb-10">Soumettre</button>
+					<button class="submit-dropdown-2 bg-white rounded-full border-custom-btn border-black text-center text-2xl font-sans font-semibold antialiased rounded-full py-4 px-8 w-full mb-10">Soumettre</button>
 				</div>
 				{{/isEqual}}
 
-				{{#isEqual questionAnswerType "unique"}}
-				<ul class="answers mb-10">
-					{{#each questionAnswers}}
-					<li class="answer font-sans font-light antialiased text-xl md:text-2xl bg-slate-100 hover:bg-slate-200 cursor-pointer rounded-full py-4 px-8 mb-4">{{answerTxt}}</li>
-					{{/each}}
-				</ul>
-				{{/isEqual}}
+				
 
 				<span class="hint font-sans font-light text-normal antialiased block border-l-4 border-slate-100 pl-5 mb-10">
 					
@@ -108,34 +118,34 @@
 	{% endraw %}
 	
 	{# {{ block('frame') }} #}
-	<body class="bg-white h-full"> 
+	<script src="https://www.blick.ch/assets/iframeHeightAdjustment.js"></script>
+	<body class="bg-white"> 
 
 		<div class="wrapper">
-		<!-- {{ block('loading_overlay') }} -->
+
 		{{ block('gtm') }}
-		
 		{{ block('header') }}
 		{{ block('menu_overlay') }}
-		{# <?php include 'hb_header_tp.php'; ?> #} 
 		
 		
 
 		<div class="container max-w-screen-2xl px-4 relative bg-white pt-16 md:pt-24">
 			<div class="container py-8 max-w-2xl">
-				<h1 class="font-serif font-semibold text-4xl md:text-5xl text-center">Saurez-vous reconnaître les enfants maudits de la rédaction?</h1>
+				<h1 class="font-serif font-semibold text-4xl md:text-5xl text-center">Buvez-vous trop d’alcool? Faites le test</h1>
 			</div>            
 			{{ block('social') }}
 		</div>
 		
 		<div class="hero">
-			<div class="container h-full max-w-screen-xl relative px-4 md:px-20">
+			<div class="container h-full max-w-screen-xl relative px-4 md:px-20"> 
 
 				<div class="mb-12 -mx-4 relative">
-					<img src="img/this/opening.png" alt="" class="mx-auto w-full max-w-2xl">
-					<span class="absolute bottom-3 text-white text-xs font-sans left-3 opacity-50 uppercase">Midjourney</span>
+					{# <img src="img/this/opening.jpg" alt="" class="mx-auto w-full max-w-2xl"> #}
+					<img src="img/this/opening.jpg" alt="">
+					<span class="absolute bottom-3 text-white text-xs font-sans left-3 opacity-50 uppercase">Shutterstock</span>
 				</div>	
-				
-			</div>
+				 
+			</div> 
 		</div>
 
 		<div class="container max-w-screen-2xl px-4 relative bg-white">
@@ -144,12 +154,23 @@
 			
 			<div class="container mt-8 mb-12 max-w-2xl">
 				<p class="lettrine text-md md:text-lg font-light mb-6">
-
-					Dans les coulisses de la rédaction se déroulent d'étranges expériences donnant parfois naissance à de singuliers personnages. Nés à l'écart des projecteurs mais élevés au rythme effréné des scoops et de l'actualité, ces enfants maudits partagent une existence unique, oscillant entre réalité médiatique et quête d'identité personnelle. Leur existence ? Un curieux amalgame de processus évolutifs et d'interventions humaines.
+					«Et toi, tu fais le Dry January?» C’est la question la plus entendue depuis la rentrée, car qui dit janvier, dit occasion d’arrêter l’alcool après les excès de Noël et les débordements du Nouvel-An. En 2023, un Helvète sur huit <a href ="https://www.addictionsuisse.ch/press/dry-january-un-sondage-montre-quil-vaut-la-peine-de-relever-le-defi/#:~:text=Les%20r%C3%A9sultats%20du%20sondage%20r%C3%A9alis%C3%A9,%C5%93il%20plut%C3%B4t%2C%20voire%20tr%C3%A8s%20positif." target="_blank" class="font-semibold underline decoration-2">a tenté l’expérience</a> du Dry January. La moitié a indiqué avoir réussi à tenir le mois entier et 70% étaient partants à réitérer l’expérience en 2024. 
 				</p>
 
-				<p class="text-lg font-light">
-					Dans ce quiz, chaque question est un pas vers la découverte, et chaque réponse est la promesse d'une rencontre fascinante. Préparez-vous à explorer les coins les plus secrets et les plus étranges de la rédaction, et à découvrir les fruits d'expériences interdites.
+				<p class="text-md md:text-lg font-light mb-6">
+					Selon <a href ="https://www.bfs.admin.ch/bfs/fr/home/statistiques/sante/enquetes/sgb.assetdetail.28625353.html" target="_blank" class="font-semibold underline decoration-2">la dernière enquête suisse</a> sur la Santé de l’Office fédéral de la Statistique (OFS), effectuée en 2022, <b class="font-semibold">83%</b> de la population suisse de plus de 15 ans boit de l’alcool. Chez les hommes, 65% en consomment au moins une fois par semaine et ce pourcentage descend à 46% chez les femmes. 
+				</p>
+
+				<p class="text-md md:text-lg font-light mb-6">
+					Si seulement 4% des Suisses présentent une consommation d’alcool chronique à risque (4 à 6 verres standard par jour pour les hommes et 2 à 4 verres pour les femmes), la consommation occasionnelle à risque (au moins cinq verres en une seule occasion pour les hommes et quatre verres pour les femmes) est en augmentation depuis 2007. En 2022, elle concerne 31% des hommes et 20% des femmes dans la tranche d’âge la plus touchée, soit les 15-24 ans. Chez les 25-34 ans, ils sont 25,8% d’hommes et 15,3% de femmes à être concernés. 
+				</p>
+
+				<p class="text-md md:text-lg font-light mb-6">
+					Mais à partir de quel moment notre consommation d’alcool doit-elle nous inquiéter? «Quand on perd la liberté de choisir ce que l’on consomme, alors on est dépendant, explique le Professeur Jean-Bernard Daeppen, chef de service de médecine des addictions au Centre hospitalier universitaire vaudois (CHUV). La dépendance, c’est l’absence de liberté.» Et c’est précisément pour aider à évaluer les risques que l’Organisation mondiale de la Santé (OMS) a élaboré l'Alcohol Use Disorders Identification Test (AUDIT), un test qui permet de se situer sur une échelle de risque en renseignant ses habitudes vis-à-vis de la boisson.
+				</p>
+
+				<p class="text-md md:text-lg font-light"> 
+					Répondez aux questions de l’AUDIT ci-dessous de la manière la plus sincère possible et découvrez les risques associés (ou non) à vos habitudes.
 				</p>
 
 			
@@ -166,20 +187,64 @@
 					<div class="bg-slate-100 px-8 py-10 rounded-3xl">
 
 					
-						<span class="block text-center font-sans font-semibold text-4xl mb-10">Votre résultat</span>
+						<span class="block text-center font-sans font-semibold text-4xl mb-10">Votre score</span>
+
 						<div class="gauge mb-10">
 							<img src="img/this/gauge-cursor.png" alt="" class="gauge-cursor absolute w-2 md:w-4 -top-3 md:-top-5">
-							<img src="img/this/gauge.png" alt="" class="gauge-bg">
+							<img src="img/this/gauge-going-bad.png" alt="" class="gauge-bg">
 						</div>
-						<span class="nb-results block text-center text-4xl font-sans font-semibold mb-6"><span class="nb-correct">8</span> / <span class="nb-question">10</span></span>
-						<span class="percent-results block text-center text-2xl font-sans font-light mb-10 md:mb-12">soit <span class="percent-correct font-semibold">80</span>% de réponses totalement correctes</span>
-						<span class="points-results block text-center text-xl font-sans font-light mb-10 md:mb-12 -mt-10">Vous avez retrouvé <span class="nb-points font-semibold">12</span> personnes sur <span class="nb-points-possibles">13</span> possibles</span>
-						<span class="final-text block text-center text-base md:text-xl font-sans font-light mb-12 rounded-3xl bg-slate-200 p-6 md:p-8">Merci d'avoir joué! Bonne fêtes à tous et à bientôt!</span>
+
+						<span class="nb-results block text-center text-4xl font-sans font-semibold mb-6">
+							<span class="nb-correct">8</span> / <span class="nb-question">40</span>
+						</span>
+
+						{# <span class="percent-results block text-center text-2xl font-sans font-light mb-10 md:mb-12">
+							soit <span class="percent-correct font-semibold">80</span>% de réponses totalement correctes
+						</span> #}
+
+						{# <span class="points-results block text-center text-xl font-sans font-light mb-10 md:mb-12 -mt-10">
+							Vous avez retrouvé <span class="nb-points font-semibold">12</span> personnes sur <span class="nb-points-possibles">13</span> possibles
+						</span> #}
+
+						<span class="final-text block text-left text-base md:text-xl font-sans font-light mb-12 rounded-3xl">
+							<span class="block bg-amber-50 p-6 md:p-8 -mx-8">
+
+								<b class="font-semibold">‣&nbsp;&nbsp;En dessous de 6 si vous êtes une femme ou 7 si vous êtes un homme</b>, vous avez probablement de faibles risques par rapport à votre consommation d'alcool.
+							</span>
+
+
+							<span class="block bg-orange-100 p-6 md:p-8 -mx-8">
+								<b class="font-semibold">‣&nbsp;&nbsp;Un score supérieur ou égal à 7 chez l’homme et à 6 chez la femme</b> évoque une consommation nocive, sans forcément de dépendance. C'est le palier où il faut vous interroger sur votre relation à l'alcool. Et c’est pour évaluer cette dépendance que le Dry January peut être utile. «Cette période peut être un bon test, poursuit Jean-Bernard Daeppen. À ce moment-là, on peut s’assurer qu’on a toujours le contrôle sur ce qu’on boit.»
+
+								Pour suivre votre consommation, le spécialiste conseille également de documenter les verres consommés, dans un carnet de bord ou dans vos notes de téléphone.
+								Des applications spécialisées existent, comme SMAART, application créée par le service de médecine des addictions du CHUV, qui compare la consommation de l’utilisateur avec celle de la population du même âge. Disponible sur <a href="https://apps.apple.com/ch/app/smaart/id1494678022?l=fr" target="_blank" class="font-normal underline decoration-2">Apple Store</a> et <a href="https://play.google.com/store/apps/details?id=com.netinfluence.smaart&hl=fr&gl=US" target="_blank" class="font-normal underline decoration-2">Google Play Store</a>.
+								Le Groupement romand d’études des addictions (GREA), a développé l’application Stop-alcool, qui permet d’évaluer ses habitudes, que l’on consomme avec modération ou non. Disponible sur <a href="https://apps.apple.com/ch/app/stop-alcool/id532497190?l=fr-FR" target="_blank" class="font-normal underline decoration-2">Apple Store</a> et <a href="https://play.google.com/store/apps/details?id=ch.apptitude.stopalcool&hl=fr_CH&gl=US" target="_blank" class="font-normal underline decoration-2">Google Play Store</a>.
+							</span>		
+
+							<span class="block bg-red-100 p-6 md:p-8 -mx-8">
+								<b class="font-semibold">‣&nbsp;&nbsp;Si vous obtenez plus de 12 points</b>, vous êtes à risque de dépendance. «La dépendance à l’alcool survient de manière très insidieuse, contrairement à la cigarette qui rend accro très vite, explique le Professeur Jean-Bernard Daeppen. Notre tolérance à ses effets augmente et on ne se rend pas compte qu’on est en train de devenir dépendant.» Si vous constatez que votre consommation impacte votre vie quotidienne de manière néfaste, il est temps de vous tourner vers votre médecin ou un spécialiste. 
+							</span>	
+
+							<span class="block mt-4 pt-4 opacity-70">
+								
+									<span class="block text-normal md:text-sm font-semibold mb-1">Les ressources à votre disposition</span>
+									<span class="block text-sm mb-4">Si votre consommation impacte votre qualité de vie, n’hésitez jamais à demander de l’aide auprès de votre médecin ou d’un spécialiste. Des ressources existent pour trouver du soutien. Vous pouvez notamment faire appel au service 24h sur 24 de <a href="https://www.143.ch/fr/" target="_blank" class="font-normal underline decoration-2">la Main tendue</a>, dédiée à l’aide aux personnes en détresse. Les plateformes <a href="https://www.projuventute.ch/fr/conseils-aux-parents" target="_blank" class="font-normal underline decoration-2">Pro Juventute</a> ou <a href="https://www.ontecoute.ch/" target="_blank" class="font-normal underline decoration-2">On t’écoute</a> proposent des conseils et du soutien aux jeunes ou aux parents.</span>
+								
+								<span class="block text-normal md:text-sm font-semibold mb-1">Des numéros sont également à disposition:</span>
+								<span class="block text-sm">
+									<b class="font-semibold">0848 805 005</b> SOS alcool – Croix-Bleue Suisse<br>
+									<b class="font-semibold">0848 848 846</b> Permanence téléphonique des Alcooliques Anonymes<br>
+									Vous pouvez trouver plus de ressources sur le site d’<a href="https://www.addictionsuisse.ch/" target="_blank" class="font-normal underline decoration-2">Addiction Suisse</a>.
+								</span>
+							</span>
+						</span>
+
 						<div class="grid grid-cols-1 md:grid-cols-2 gap-x-6">
 							<a href="." class="block">
 							<button class="btn-redo bg-white rounded-full border-custom-btn border-black text-center text-2xl font-sans font-semibold antialiased rounded-full py-4 px-8 w-full mb-4 md:mb-0">Refaire le test</button></a>
 							<button class="btn-shar bg-white rounded-full border-custom-btn border-black text-center text-2xl font-sans font-semibold antialiased rounded-full py-4 px-8">Partager</button>
 						</div>
+
 					</div>
 				</div>
 

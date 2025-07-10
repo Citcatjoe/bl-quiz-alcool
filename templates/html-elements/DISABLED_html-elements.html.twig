@@ -6,7 +6,7 @@
 
 {% block authors %}
 <div class="container flex py-4 max-w-2xl border-y">
-	<div class="author w-52">
+	<div class="author w-full">
 		{# <a target="_blank" href="https://www.blick.ch/fr/auteurs/gre-gory-beaud-journaliste-blick-id16519809.html" class="flex items-center"> #}
 		<span class="flex items-center">
 			<img src="https://storytelling.blick.ch/fr/__is_embed_somewhere/img/{{authors.writer.fname|replace({'é': 'e'})|lower}}-{{ authors.writer.lname|replace({' ': '-'})|lower }}.{{authors.writer.filetype}}" alt="Portrait de&nbsp;{{authors.writer.fname}}&nbsp;{{authors.writer.lname}}" class="rounded-full w-12 mr-2.5">

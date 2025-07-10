@@ -1,2127 +1,324 @@
 [
     {
-        "questionImg": "x-amit-lara.png",
+        "questionImg": null,
         "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
+        "questionTxt": "À quelle fréquence consommez-vous de l'alcool?",
+        "questionAnswerType": "unique-ponderation",
         "questionAnswers": [
             {
-                "answerTxt": "Amit",
-                "answerIsTrue": true
+                "answerTxt": "Jamais",
+                "answerIsTrue": true,
+                "answerScore": 0
             },
             {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par mois ou moins",
+                "answerIsTrue": false,
+                "answerScore": 1
             },
             {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
+                "answerTxt": "2 à 4 fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 2
             },
             {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
+                "answerTxt": "2 à 3 fois par semaine",
+                "answerIsTrue": false,
+                "answerScore": 3
             },
             {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
+                "answerTxt": "4 fois ou plus par semaine",
+                "answerIsTrue": false,
+                "answerScore": 4
             }
         ],
-        "questionHint": "Cette beauté est issue de Amit et Lara"
+        "questionHint": null
     },
     {
-        "questionImg": "x-bastien-tiffany.png",
+        "questionImg": null,
         "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
+        "questionTxt": "Combien de verres d'alcool consommez-vous un jour typique où vous buvez?",
+        "questionAnswerType": "unique-ponderation",
         "questionAnswers": [
             {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
+                "answerTxt": "1 ou 2",
+                "answerIsTrue": true,
+                "answerScore": 0
             },
             {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
+                "answerTxt": "3 ou 4",
+                "answerIsTrue": false,
+                "answerScore": 1
             },
             {
-                "answerTxt": "Bastien",
-                "answerIsTrue": true
+                "answerTxt": "5 ou 6",
+                "answerIsTrue": false,
+                "answerScore": 2
             },
             {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
+                "answerTxt": "7 à 9",
+                "answerIsTrue": false,
+                "answerScore": 3
             },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
+              {
+                "answerTxt": "10 ou plus",
+                "answerIsTrue": false,
+                "answerScore": 4
             }
         ],
-        "questionHint": "Cette beauté est issue de Bastien et Tiffany"
+        "questionHint": null
     },
     {
-        "questionImg": "x-camille-antoine.png",
+        "questionImg": null,
         "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
+        "questionTxt": "À quelle fréquence buvez-vous six verres ou plus en une même occasion?",
+        "questionAnswerType": "unique-ponderation",
         "questionAnswers": [
             {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
+                "answerTxt": "Jamais",
+                "answerIsTrue": true,
+                "answerScore": 0
             },
             {
-                "answerTxt": "Antoine",
-                "answerIsTrue": true
+                "answerTxt": "Moins d'une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 1
             },
             {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 2
             },
             {
-                "answerTxt": "Camille",
-                "answerIsTrue": true
+                "answerTxt": "Une fois par semaine",
+                "answerIsTrue": false,
+                "answerScore": 3
             },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
+              {
+                "answerTxt": "Tous les jours ou presque",
+                "answerIsTrue": false,
+                "answerScore": 4
             }
         ],
-        "questionHint": "Cette beauté est issue de Camille et Antoine"
+        "questionHint": null
     },
     {
-        "questionImg": "x-celine-mat.png",
+        "questionImg": null,
         "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
+        "questionTxt": "Au cours de l'année écoulée, combien de fois avez-vous constaté que vous n'étiez plus capable de vous arrêter de boire une fois que vous aviez commencé?",
+        "questionAnswerType": "unique-ponderation",
         "questionAnswers": [
             {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
+                "answerTxt": "Jamais",
+                "answerIsTrue": true,
+                "answerScore": 0
             },
             {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
+                "answerTxt": "Moins d'une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 1
             },
             {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 2
             },
             {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par semaine",
+                "answerIsTrue": false,
+                "answerScore": 3
             },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
+              {
+                "answerTxt": "Tous les jours ou presque",
+                "answerIsTrue": false,
+                "answerScore": 4
             }
         ],
-        "questionHint": "Cette beauté est issue de Céline et Matthias"
+        "questionHint": null
     },
     {
-        "questionImg": "x-cesar--mathilde.png",
+        "questionImg": null,
         "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
+        "questionTxt": "Au cours de l'année écoulée, à quelle fréquence le fait d'avoir bu de l'alcool vous a-t-il empêché de faire ce qui était normalement attendu de vous?",
+        "questionAnswerType": "unique-ponderation",
         "questionAnswers": [
             {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
+                "answerTxt": "Jamais",
+                "answerIsTrue": true,
+                "answerScore": 0
             },
             {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
+                "answerTxt": "Moins d'une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 1
             },
             {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 2
             },
             {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par semaine",
+                "answerIsTrue": false,
+                "answerScore": 3
             },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
+              {
+                "answerTxt": "Tous les jours ou presque",
+                "answerIsTrue": false,
+                "answerScore": 4
             }
         ],
-        "questionHint": "Cette beauté est issue de César et Mathilde"
+        "questionHint": null
     },
     {
-        "questionImg": "x-ellen-greg.png",
+        "questionImg": null,
         "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
+        "questionTxt": "Au cours de l'année écoulée, à quelle fréquence, après une période de forte consommation, avez-vous dû boire de l'alcool dès le matin pour vous sentir en forme?",
+        "questionAnswerType": "unique-ponderation",
         "questionAnswers": [
             {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
+                "answerTxt": "Jamais",
+                "answerIsTrue": true,
+                "answerScore": 0
             },
             {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
+                "answerTxt": "Moins d'une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 1
             },
             {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 2
             },
             {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par semaine",
+                "answerIsTrue": false,
+                "answerScore": 3
             },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
+              {
+                "answerTxt": "Tous les jours ou presque",
+                "answerIsTrue": false,
+                "answerScore": 4
             }
         ],
-        "questionHint": "Cette beauté est issue de Gregory et Ellen"
+        "questionHint": null
     },
     {
-        "questionImg": "x-gabby-leo.png",
+        "questionImg": null,
         "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
+        "questionTxt": "Au cours de l'année écoulée, combien de fois avez-vous eu un sentiment de culpabilité ou des remords après avoir bu?",
+        "questionAnswerType": "unique-ponderation",
         "questionAnswers": [
             {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
+                "answerTxt": "Jamais",
+                "answerIsTrue": true,
+                "answerScore": 0
             },
             {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
+                "answerTxt": "Moins d'une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 1
             },
             {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 2
             },
             {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par semaine",
+                "answerIsTrue": false,
+                "answerScore": 3
             },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
+              {
+                "answerTxt": "Tous les jours ou presque",
+                "answerIsTrue": false,
+                "answerScore": 4
             }
         ],
-        "questionHint": "Cette beauté est issue de Gabby et Léo"
+        "questionHint": null
     },
     {
-        "questionImg": "x-laurent-lara.png",
+        "questionImg": null,
         "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
+        "questionTxt": "Au cours de l'année écoulée, combien de fois avez-vous été incapable de vous rappeler ce qui s'était passé la soirée précédente parce que vous aviez bu?",
+        "questionAnswerType": "unique-ponderation",
         "questionAnswers": [
             {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
+                "answerTxt": "Jamais",
+                "answerIsTrue": true,
+                "answerScore": 0
             },
             {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
+                "answerTxt": "Moins d'une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 1
             },
             {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par mois",
+                "answerIsTrue": false,
+                "answerScore": 2
             },
             {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
+                "answerTxt": "Une fois par semaine",
+                "answerIsTrue": false,
+                "answerScore": 3
             },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
+              {
+                "answerTxt": "Tous les jours ou presque",
+                "answerIsTrue": false,
+                "answerScore": 4
             }
         ],
-        "questionHint": "Cette beauté est issue de Laurent et Lara"
+        "questionHint": null
     },
     {
-        "questionImg": "x-sylvie-loick.png",
+        "questionImg": null,
         "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
+        "questionTxt": "Vous êtes-vous blessé ou avez-vous blessé quelqu'un parce que vous aviez bu?",
+        "questionAnswerType": "unique-ponderation",
         "questionAnswers": [
             {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
+                "answerTxt": "Non",
+                "answerIsTrue": true,
+                "answerScore": 0
             },
             {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
+                "answerTxt": "Oui, mais pas au cours de l'année écoulée",
+                "answerIsTrue": false,
+                "answerScore": 2
             },
             {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
+                "answerTxt": "Oui, au cours de l'année",
+                "answerIsTrue": false,
+                "answerScore": 4
             }
+    
         ],
-        "questionHint": "Cette beauté est issue de Sylvie et Loick"
+        "questionHint": null
     },
     {
-        "questionImg": "x-lucie-thib.png",
+        "questionImg": null,
         "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
+        "questionTxt": "Un parent, un ami, un médecin ou autre soignant s'est-il inquiété de votre consommation d'alcool ou a-t-il suggéré que vous la réduisiez? ",
+        "questionAnswerType": "unique-ponderation",
         "questionAnswers": [
             {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
+                "answerTxt": "Non",
+                "answerIsTrue": true,
+                "answerScore": 0
             },
             {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
+                "answerTxt": "Oui, mais pas au cours de l'année écoulée",
+                "answerIsTrue": false,
+                "answerScore": 2
             },
             {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
+                "answerTxt": "Oui, au cours de l'année",
+                "answerIsTrue": false,
+                "answerScore": 4
             }
+    
         ],
-        "questionHint": "Cette beauté est issue de Lucie et Thibault"
-    },
-    {
-        "questionImg": "x-marie-etienne.png",
-        "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
-        "questionAnswers": [
-            {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
-            }
-        ],
-        "questionHint": "Cette beauté est issue de Marie et Etienne"
-    },
-    {
-        "questionImg": "x-michel-jess.png",
-        "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
-        "questionAnswers": [
-            {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
-            }
-        ],
-        "questionHint": "Cette beauté est issue de Michel et Jessica"
-    },
-    {
-        "questionImg": "x-pierre-daniella.png",
-        "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
-        "questionAnswers": [
-            {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
-            }
-        ],
-        "questionHint": "Cette beauté est issue de Pierre et Daniella"
-    },
-    {
-        "questionImg": "x-richard-lucie.png",
-        "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
-        "questionAnswers": [
-            {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
-            }
-        ],
-        "questionHint": "Cette beauté est issue de Richard et Lucie"
-    },
-    {
-        "questionImg": "x-sylvie-fab.png",
-        "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
-        "questionAnswers": [
-            {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
-            }
-        ],
-        "questionHint": "Cette beauté est issue de Sylvie et Fabien"
-    },
-    {
-        "questionImg": "x-thomas-gabby.png",
-        "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
-        "questionAnswers": [
-            {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": false
-            }
-        ],
-        "questionHint": "Cette beauté est issue de Thomas et Gabby"
-    },
-    {
-        "questionImg": "x-tim-ellen.png",
-        "questionImgCredit": null,
-        "questionTxt": "Qui pourraient bien être les parents de cet enfant maudit?",
-        "questionAnswerType": "dropdown-2",
-        "questionAnswers": [
-            {
-                "answerTxt": "Amit",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Antoine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Bastien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Camille",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Celine",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Cesar",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Daniella",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Ellen",
-                "answerIsTrue": true
-            },
-            {
-                "answerTxt": "Etienne",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Fabien",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gabby",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Gregory",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Jessica",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lara",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Laurent",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Leo",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Loick",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Lucie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Marie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Mathilde",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Matthias",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Michel",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Pierre",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Richard",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Sylvie",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thibault",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Thomas",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tiffany",
-                "answerIsTrue": false
-            },
-            {
-                "answerTxt": "Tim",
-                "answerIsTrue": true
-            }
-        ],
-        "questionHint": "Cette beauté est issue de Tim et Ellen"
+        "questionHint": null
     }
 ]
